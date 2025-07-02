@@ -86,7 +86,7 @@ namespace TestInputTray
             }
             else
             {
-                SetThreadExecutionState(ExecutionState.EsContinuous | ExecutionState.EsDisplayRequired);
+                SetThreadExecutionState(ExecutionState.EsContinuous | ExecutionState.EsDisplayRequired | ExecutionState.EsAwaymodeRequired);
                 _notifyIcon.Icon = Properties.Resources.runs;
                 Timer.Start();
             }
